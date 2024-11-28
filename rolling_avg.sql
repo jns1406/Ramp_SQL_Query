@@ -12,3 +12,6 @@ avg(day_transaction_amount) over(order by transaction_date
                                rows between 2 preceding and current row) as rolling_average_amount
                                
  from cte
+
+
+/* I have not used a where condition to check the data from Jan 1 2021 to Jan 31 2021  because i have checked the data , and there are no outliers
